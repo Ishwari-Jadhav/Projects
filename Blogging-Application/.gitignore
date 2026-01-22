@@ -1,0 +1,23 @@
+# Compiled Java classes
+*.class
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+
+# IDE files (Eclipse, IntelliJ)
+*.idea/
+*.vscode/
+*.project
+*.classpath
+
+# Tomcat / build directories
+WEB-INF/classes/
+WEB-INF/lib/*.jar
+
+# Operating system files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <!-- Default homepage -->
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+
+    <!-- Add Blog Servlet -->
+    <servlet>
+        <servlet-name>BlogServlet</servlet-name>
+        <servlet-class>com.blog.BlogServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>BlogServlet</servlet-name>
+        <url-pattern>/BlogServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- View Blogs Servlet -->
+    <servlet>
+        <servlet-name>ViewBlogsServlet</servlet-name>
+        <jsp-file>/viewBlogs.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ViewBlogsServlet</servlet-name>
+        <url-pattern>/viewblogs</url-pattern>
+    </servlet-mapping>
+
+    <!-- Delete Blogs Servlet -->
+    <servlet>
+    <servlet-name>DeleteBlogServlet</servlet-name>
+    <servlet-class>com.blog.DeleteBlogServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DeleteBlogServlet</servlet-name>
+        <url-pattern>/deleteblog</url-pattern>
+    </servlet-mapping>
+
+</web-app>

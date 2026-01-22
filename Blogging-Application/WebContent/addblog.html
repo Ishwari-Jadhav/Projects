@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Blog - APCOER Insights Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f1fa;
+            text-align: center;
+            padding-top: 50px;
+        }
+        h2 {
+            color: #6a1b9a;
+        }
+        form {
+            display: inline-block;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        input, textarea {
+            width: 300px;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        button {
+            padding: 12px 25px;
+            background-color: #6a1b9a;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: #8e24aa;
+        }
+        a {
+            display: block;
+            margin-top: 15px;
+            color: #6a1b9a;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>Add New Blog</h2>
+    <form action="BlogServlet" method="post">
+        <input type="text" name="title" placeholder="Blog Title" required><br>
+        <input type="text" name="author" placeholder="Author Name" required><br>
+        <textarea name="content" placeholder="Blog Content" rows="6" required></textarea><br>
+        <button type="submit">Submit Blog</button>
+    </form>
+    <a href="index.html">Back to Home</a>
+</body>
+</html>
